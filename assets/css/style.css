@@ -1,0 +1,1093 @@
+/********************* Deafult Start *********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.ciam-site {
+    font-family: 'Poppins', sans-serif;
+    color: #1D1A2F;
+}
+
+.btn {
+    padding: 8px 35px;
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #1B172D;
+    border-color: #1B172D;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus,
+.btn-check:active+.btn-primary,
+.btn-check:checked+.btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show>.btn-primary.dropdown-toggle,
+.btn-primary:hover {
+    background-color: #1c1f36;
+    border-color: #1c1f36;
+}
+
+.form-control:focus,
+.form-select:focus,
+.btn-check:focus+.btn-primary,
+.btn-primary:focus,
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.slick-dots {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.slick-dots li {
+    line-height: 0;
+}
+
+.slick-dots button {
+    font-size: 0;
+    background-color: #fff;
+    border-color: #1B172D;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.slick-active button {
+    background-color: #1B172D;
+}
+
+.ciam-section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ciam-section-title {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.ciam-section-description {
+    width: 865px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.ciam-section {
+    padding: 100px 0;
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+a {
+    transition: all ease-in-out 0.3s;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 25px;
+    background-image: url(../images/slider-arrow.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+}
+
+.slick-next.slick-arrow {
+    left: unset;
+    right: -50px;
+    transform: translateY(-50%) rotate( 180deg);
+}
+
+.ciam-user-login-btn button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.form-select,
+.form-control {
+    border: 1px solid #DDDDDD;
+    color: #1D1A2F;
+    font-weight: 500;
+}
+
+.form-select::placeholder,
+.form-control::placeholder {
+    color: #1D1A2F;
+    font-weight: 500;
+}
+
+
+/********************* Deafult End *********************/
+
+
+/********************* Header Start *********************/
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+    color: #323231;
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: #323231;
+    opacity: 0.8;
+}
+
+.navbar {
+    padding: 25px 20px;
+    box-shadow: 0px 5px 10px #0000001A;
+}
+
+.navbar .nav-link.btn-primary {
+    color: #fff;
+}
+
+.navbar .nav-link.btn-primary:hover {
+    opacity: 1;
+}
+
+.navbar .dropdown-menu {
+    padding: 25px 20px;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    padding: 10px 0;
+    color: #1D1A2F;
+}
+
+.navbar .dropdown-menu li:not(:last-child) {
+    border-bottom: 1px solid #fff;
+}
+
+.navbar .dropdown-menu li:nth-child(1) .dropdown-item {
+    padding-top: 0;
+}
+
+.navbar .dropdown-menu li:last-child .dropdown-item {
+    padding-bottom: 0;
+}
+
+.ciam-user-login-btn .dropdown-menu[data-bs-popper] {
+    left: unset;
+    right: 0;
+    top: calc(100% + 10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
+}
+
+.ciam-user-login-btn .dropdown-toggle img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #1B172D;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 20px;
+}
+
+.navbar .dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #1D1A2F;
+    font-weight: 700;
+}
+
+
+/********************* Header End *********************/
+
+
+/********************* Search Bar Start *********************/
+
+.ciam-searchBar__inner {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #1B172D;
+    box-shadow: 6px 6px 15px #00000014;
+}
+
+.ciam-searchBar {
+    padding: 50px 0;
+    background-color: #2A2C3C;
+}
+
+.ciam-searchBar .form-label {
+    color: #252525;
+    opacity: 0.5;
+}
+
+.ciam-searchBar-content {
+    width: 33.33%;
+    padding: 20px 30px;
+}
+
+.ciam-searchBar-content:not(:first-child) {
+    border-left: 1px solid #1B172D;
+}
+
+.ciam-searchBar-btn {
+    background-color: #1B172D;
+    color: #fff;
+    border: none;
+    height: calc(100% + 1px);
+    padding: 20px 35px;
+    border-radius: 0 10px 10px 0;
+    margin-right: -1px;
+}
+
+.ciam-searchBar-btn .material-icons {
+    font-size: 50px;
+}
+
+.ciam-searchBar-content .form-control,
+.ciam-searchBar-content .form-select {
+    padding: 4px 0;
+    border: none;
+}
+
+.ciam-searchBar-content .form-control {
+    padding-left: 30px;
+}
+
+.ciam-searchBar-content .form-control::placeholder {
+    color: #252525;
+}
+
+.ciam-searchBar-content .ciam-searchBar-input {
+    position: relative;
+}
+
+.ciam-searchBar-content .ciam-searchBar-input::before {
+    content: "\e0c8";
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+.ciam-searchBar-content:nth-child(2) .ciam-searchBar-input::before {
+    display: none;
+}
+
+.ciam-searchBar-content:nth-child(3) .ciam-searchBar-input::before {
+    content: "\e8b6";
+}
+
+
+/********************* Search Bar End *********************/
+
+
+/********************* Home Page Start *********************/
+
+
+/* Landing Section Start */
+
+.ciam-landing-section {
+    padding: 0;
+}
+
+.ciam-landing-slider .slick-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 35px;
+    left: 0;
+    margin-top: 0;
+}
+
+
+/* Landing Section End */
+
+
+/* Find Specialities Doctor Section Start */
+
+.ciam-find-specialities-doctors {
+    background-image: linear-gradient(#A3D9FF, #D5FF98);
+    position: relative;
+}
+
+.ciam-find-specialities-doctors__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.ciam-find-specialities-doctors::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/specialities-doctors-back.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ciam-find-specialities-card {
+    text-align: center;
+}
+
+.ciam-find-specialities-name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.ciam-find-specialities-slide {
+    margin: 0 20px;
+}
+
+.ciam-find-specialities-card img {
+    width: 165px;
+    height: 165px;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #1B172D;
+    margin: 0 auto 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ciam-section-bottom-btn {
+    padding-top: 40px;
+}
+
+
+/* Find Specialities Doctor Section End */
+
+
+/* Meet Specialities Doctor Section Start */
+
+.ciam-meet-specialities-doctors {
+    background-image: linear-gradient(#D5FF98, #A3D9FF);
+}
+
+.ciam-meet-specialities-slide {
+    margin: 0 15px;
+    height: inherit !important;
+}
+
+.ciam-slide-card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ciam-slide-card-img img {
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ciam-slide-card-body {
+    padding: 20px 15px;
+    background-color: #fff;
+    flex: 1 0 auto;
+}
+
+.ciam-slide-card-footer {
+    padding: 0 15px 20px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+.ciam-slide-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.ciam-doctor-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ciam-doctor-experience {
+    margin-bottom: 0;
+}
+
+.ciam-doctor-address {
+    margin-bottom: 0;
+}
+
+.ciam-doctor-address span {
+    font-weight: 700;
+}
+
+
+/* Meet Specialities Doctor Section End */
+
+
+/* Medicines Section Start */
+
+.ciam-medicines-section {
+    background-image: linear-gradient(#A3D9FF, #A3D9FF);
+}
+
+.ciam-product-card .ciam-slide-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.ciam-product-description {
+    margin-bottom: 10px;
+}
+
+.ciam-product-price {
+    color: #2B2D3D;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.ciam-product-price span {
+    opacity: 0.5;
+}
+
+.ciam-product-card .ciam-slide-card-img {
+    padding: 15px 15px 30px 15px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.ciam-product-card .ciam-slide-card-img::after {
+    content: "";
+    width: calc(100% - 30px);
+    left: 15px;
+    height: 1px;
+    background-color: #1B172D;
+    position: absolute;
+    bottom: 6px;
+}
+
+.ciam-product-card .ciam-slide-card-img img {
+    border-radius: 0;
+}
+
+
+/* Medicines Section End */
+
+
+/* Medicines Section End */
+
+.ciam-popular-products-section {
+    background-image: linear-gradient(#A3D9FF, #D5FF98);
+}
+
+.ciam-product-card .ciam-slide-card-img img {
+    object-fit: contain;
+}
+
+.ciam-health-checkups {
+    background-image: linear-gradient(#D5FF98, #FFD26C);
+}
+
+.ciam-doctor-experience a {
+    color: #1D1A2F;
+    text-decoration: none;
+}
+
+.ciam-trusted-geniune-laboratory {
+    background-image: linear-gradient(#FFD26C, #FF9FF0);
+}
+
+
+/* Medicines Section End */
+
+
+/* Home Care Services Section Start */
+
+.ciam-home-care-services {
+    background-image: linear-gradient(#FF9FF0, #FFD26C);
+}
+
+.ciam-service-card {
+    background-color: #1B172D;
+    text-align: center;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ciam-service-card-icon {
+    height: 75px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.ciam-service-card-icon img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    width: auto;
+}
+
+.ciam-service-card-title {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ciam-service-card-title:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.ciam-home-care-services-content .col {
+    margin-bottom: 20px;
+}
+
+.ciam-home-care-subcategory {
+    background-image: linear-gradient(#FFD26C, #FFD26C);
+}
+
+
+/* Home Care Services Section End */
+
+
+/* Our Mission Section End */
+
+.ciam-our-mission {
+    background-image: linear-gradient(#FFD26C, #FF9FF0);
+}
+
+.ciam-our-mission>.ciam-section-heading {
+    margin-bottom: 200px;
+}
+
+.ciam-testimonial-card {
+    text-align: center;
+}
+
+.ciam-rating-list {
+    padding: 0;
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ciam-testimonial-user-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.ciam-testimonial-description {
+    font-weight: 500;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.ciam-testimonial-description:before,
+.ciam-testimonial-description:after {
+    content: "";
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-image: url(../images/testimonial-quote.png);
+}
+
+.ciam-testimonial-description:before {
+    top: unset;
+    bottom: 100%;
+    right: unset;
+    left: 0;
+    transform: rotate( 180deg);
+}
+
+.ciam-testimonial-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #1B172D;
+    margin: 0 auto 20px;
+}
+
+
+/* Our Mission Section End */
+
+
+/* Download Application Section Start */
+
+.ciam-download-application {
+    background-image: linear-gradient(#FF9FF0, #A3D9FF);
+}
+
+.ciam-download-application .row {
+    align-items: center;
+}
+
+.ciam-download-application-content .ciam-section-description {
+    margin-bottom: 40px;
+}
+
+.ciam-download-app-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ciam-download-app-link {
+    display: block;
+}
+
+.ciam-download-app-item:not(:last-child) {
+    margin-right: 25px;
+}
+
+
+/* Download Application Section End */
+
+
+/********************* Home Page End *********************/
+
+
+/********************* Profile Page Start *********************/
+
+.ciam-dashboard-section {
+    background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
+}
+
+.ciam-dashboard-sidebar {
+    background-color: #1B172D;
+    border-radius: 10px 0 0 10px;
+    padding: 10px 0 50px;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.ciam-sidebar-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 25px 30px;
+    position: relative;
+}
+
+.ciam-sidebar-user:after {
+    content: "";
+    width: calc(100% - 50px);
+    position: absolute;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+}
+
+.ciam-sidebar-user img {
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #ffff;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cial-sidebar-menu-list {
+    padding-left: 25px;
+    margin: 45px 0;
+    list-style: none;
+}
+
+.cial-sidebar-menu-link {
+    padding: 20px 40px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px 0 0 30px;
+}
+
+.cial-sidebar-menu-link:hover,
+.cial-sidebar-menu-link.active {
+    background-color: #fff;
+    color: #252525;
+}
+
+.cial-sidebar-menu-link svg {
+    margin-right: 15px;
+}
+
+.cial-sidebar-menu-link:hover path[fill="#fff"],
+.cial-sidebar-menu-link.active path[fill="#fff"] {
+    fill: #000 !important;
+}
+
+.ciam-dashboard-content {
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 16%);
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+}
+
+.ciam-dashboard-content__inner {
+    padding: 20px;
+    border: 1px solid #1B172D;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #1B172D;
+}
+
+.nav-tabs .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: #252525;
+    border: none;
+    background-color: transparent;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    border: none;
+    color: #409690;
+}
+
+.ciam-tab-content {
+    padding-top: 30px;
+}
+
+.ciam-fileInput {
+    position: relative;
+}
+
+.ciam-fileInput .form-control {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.ciam-fileInput-text {
+    display: block;
+    padding: 8px;
+    background-color: #DDDDDD;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+
+/********************* Profile Page End *********************/
+
+
+/********************* My Appointment Page Start *********************/
+
+.ciam-appointment-card-body {
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+.ciam-appointment-card-footer {
+    padding: 0 20px 20px;
+}
+
+.ciam-appointment-card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ciam-appointment-card-img img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.ciam-order-card-title,
+.ciam-card-details {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.ciam-card-details:last-child {
+    margin-bottom: 0;
+}
+
+.ciam-card-details-title {
+    opacity: 0.5;
+}
+
+.ciam-appointment-card-footer .btn {
+    padding: 8px;
+}
+
+.ciam-appointment-content .col {
+    margin-bottom: 30px;
+}
+
+
+/********************* My Appointment Page End *********************/
+
+
+/********************* My Order Page Start *********************/
+
+.ciam-order-content .col {
+    margin-bottom: 20px;
+}
+
+.ciam-order-card-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.ciam-order-card {
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+}
+
+.ciam-order-card-body .row {
+    align-items: center;
+}
+
+
+/********************* My Order Page End *********************/
+
+
+/********************* My Review Page Start *********************/
+
+.ciam-review-card-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.ciam-review-user {
+    display: flex;
+    align-items: center;
+}
+
+.ciam-review-rating-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.ciam-review-user-img {
+    margin-right: 20px;
+}
+
+.ciam-review-user-img img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #1B172D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.ciam-review-user-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.ciam-review-date {
+    color: #409690;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.ciam-review-card {
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+}
+
+.ciam-review-description {
+    margin-bottom: 0;
+}
+
+.ciam-review-content .col {
+    margin-bottom: 20px;
+}
+
+.ciam-wallet-balance-title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1B172D;
+}
+
+.ciam-wallet-balance-title span {
+    color: #409690;
+}
+
+
+/********************* My Review Page End *********************/
+
+
+/********************* Footer Start *********************/
+
+.ciam-site-footer {
+    background-color: #409690;
+    color: #ffffff;
+}
+
+.ciam-site-footer-content {
+    padding: 50px 0;
+}
+
+.ciem-site-footer-info {
+    padding: 25px 0;
+}
+
+.ciem-site-footer-info-text {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.ciam-site-footer-content {
+    padding: 50px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.ciam-footer-menu-list {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.ciam-footer-menu-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.ciam-footer-menu-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ciam-footer-menu-item {
+    margin-bottom: 10px;
+}
+
+.ciam-footer-menu-link:hover {
+    color: #ffff;
+    opacity: 0.8;
+}
+
+.ciam-social-list {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.ciam-social-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.ciam-footer-logo {
+    margin-bottom: 25px;
+}
+
+.ciam-footer-description {
+    margin-bottom: 30px;
+}
+
+
+/********************* Footer End *********************/
+
+
+/********************* Responsive Start *********************/
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .navbar .nav-link {
+        font-size: 16px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+
+/********************* Responsive End *********************/
