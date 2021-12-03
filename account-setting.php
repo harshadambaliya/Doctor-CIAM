@@ -14,7 +14,7 @@
 
                         <ul class="cial-sidebar-menu-list">
                             <li class="cial-sidebar-menu-item">
-                                <a href="profile.php" class="cial-sidebar-menu-link active">
+                                <a href="profile.php" class="cial-sidebar-menu-link">
                                     <svg id="person_outline_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path id="Path_2006" data-name="Path 2006" d="M0,0H24V24H0Z" fill="none"/>
                                         <path id="Path_2007" data-name="Path 2007" d="M12,5.9A2.1,2.1,0,1,1,9.9,8,2.1,2.1,0,0,1,12,5.9m0,9c2.97,0,6.1,1.46,6.1,2.1v1.1H5.9V17c0-.64,3.13-2.1,6.1-2.1M12,4a4,4,0,1,0,4,4A4,4,0,0,0,12,4Zm0,9c-2.67,0-8,1.34-8,4v3H20V17C20,14.34,14.67,13,12,13Z" fill="#fff"/>
@@ -113,7 +113,7 @@
                                 </a>
                             </li>
                             <li class="cial-sidebar-menu-item">
-                                <a href="account-setting.php" class="cial-sidebar-menu-link">
+                                <a href="account-setting.php" class="cial-sidebar-menu-link active">
                                     <svg id="manage_accounts_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g id="Group_1071" data-name="Group 1071">
                                             <path id="Path_2041" data-name="Path 2041" d="M0,0H24V24H0Z" fill="none"/>
@@ -149,147 +149,27 @@
             <div class="col col-12 col-md-12 col-lg-8">
                 <div class="ciam-dashboard-content">
                     <div class="ciam-dashboard-content__inner">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab" aria-controls="personal" aria-selected="true">Personal</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="medical-tab" data-bs-toggle="tab" data-bs-target="#medical" type="button" role="tab" aria-controls="medical" aria-selected="false">Medical</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="lifestyle-tab" data-bs-toggle="tab" data-bs-target="#lifestyle" type="button" role="tab" aria-controls="lifestyle" aria-selected="false">Lifestyle</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="profileTabContent">
-                            <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
-                                <div class="ciam-tab-content">
-                                    <form class="row g-3">
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputFirstname" class="form-label">First name</label>
-                                            <input type="text" class="form-control" id="Firstname" placeholder="First name">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputLastname" class="form-label">Last name</label>
-                                            <input type="text" class="form-control" id="Lastname" placeholder="Last name">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputEmailId" class="form-label">Email id</label>
-                                            <input type="email" class="form-control" id="inputEmailId" placeholder="Email id">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputContactNumber" class="form-label">Contact Number</label>
-                                            <input type="text" class="form-control" id="inputContactNumber" placeholder="Contact Number">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputAge" class="form-label">Age</label>
-                                            <input type="text" class="form-control" id="inputAge" placeholder="Age">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputGender" class="form-label">Gender</label>
-                                            <input type="text" class="form-control" id="inputGender" placeholder="Gender">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputDateofBirth" class="form-label">Date of Birth</label>
-                                            <input type="date" class="form-control" id="inputDateofBirth" placeholder="Date of Birth">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputBloodGroup" class="form-label">Blood group</label>
-                                            <input type="text" class="form-control" id="inputBloodGroup" placeholder="Blood group">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputMaritalStatus" class="form-label">Marital status</label>
-                                            <input type="text" class="form-control" id="inputMaritalStatus" placeholder="Marital status">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputHeight" class="form-label">Height</label>
-                                            <input type="text" class="form-control" id="inputHeight" placeholder="Height">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputWeight" class="form-label">Weight</label>
-                                            <input type="text" class="form-control" id="inputWeight" placeholder="Weight">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputEmergencycontact" class="form-label">Emergency contact</label>
-                                            <input type="text" class="form-control" id="inputEmergencycontact" placeholder="Emergency contact">
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputAddress" class="form-label">Address</label>
-                                            <textarea  class="form-control" name="" id="inputAddress" rows="4" placeholder="Address"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputAddress" class="form-label">Update photo</label>
-                                            <div class="ciam-fileInput">
-                                                <input type="file" class="form-control">
-                                                <span class="ciam-fileInput-text">+ Choose New Profile photo</span>
-                                            </div>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12 text-center">
-                                            <button type="submit" class="btn btn-primary w-100">Update</button>
-                                        </div>
-                                    </form>
+                        <form class="row g-3">
+                            <div class="col col-12 col-md-12 col-lg-12">
+                                <label for="inputChangePassword" class="form-label">Change the Password</label>
+                                <input type="text" class="form-control" id="inputChangePassword" placeholder="Enter Old password">
+                            </div>
+                            <div class="col col-12 col-md-12 col-lg-12">
+                                <label for="inputEnterNewPassword" class="form-label">New Password</label>
+                                <input type="text" class="form-control" id="inputEnterNewPassword" placeholder="Enter New Password">
+                            </div>
+                            <div class="col col-12 col-md-12 col-lg-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexDeactivateAccount">
+                                    <label class="form-check-label" for="flexDeactivateAccount">
+                                        Deactivate the account
+                                    </label>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="medical" role="tabpanel" aria-labelledby="medical-tab">
-                                <div class="ciam-tab-content">
-                                    <form class="row g-3">
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputDetailsofAllergies" class="form-label">Details of allergies</label>
-                                            <textarea  class="form-control" name="" id="inputDetailsofAllergies" rows="4" placeholder="Details of allergies"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputCurrentPastMedications" class="form-label">Current & Past Medications</label>
-                                            <textarea  class="form-control" name="" id="inputCurrentPastMedications" rows="4" placeholder="Current & Past Medications"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputPastSurgeryInjury" class="form-label">Past surgery or injury</label>
-                                            <textarea  class="form-control" name="" id="inputPastSurgeryInjury" rows="4" placeholder="Past surgery or injury"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputAnyChronicDisease" class="form-label">Any chronic disease</label>
-                                            <textarea  class="form-control" name="" id="inputAnyChronicDisease" rows="4" placeholder="Any chronic disease"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12 text-center">
-                                            <button type="submit" class="btn btn-primary w-100">Update</button>
-                                        </div>
-                                    </form>
-                                </div>
+                            <div class="col col-12 col-md-12 col-lg-12 text-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
-                            <div class="tab-pane fade" id="lifestyle" role="tabpanel" aria-labelledby="lifestyle-tab">
-                                <div class="ciam-tab-content">
-                                    <form class="row g-3">
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputSmoking" class="form-label">Smoking</label>
-                                            <select id="inputSmoking" class="form-select">
-                                                <option selected>Yes</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputAlchol" class="form-label">Alchol</label>
-                                            <select id="inputAlchol" class="form-select">
-                                                <option selected>Yes</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputWorkoutLevel" class="form-label">Workout level</label>
-                                            <select id="inputWorkoutLevel" class="form-select">
-                                                <option selected>High</option>
-                                                <option>Medium</option>
-                                                <option>Low</option>
-                                            </select>
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputSportsInvolvement" class="form-label">Sports involvement</label>
-                                            <input type="text" class="form-control" id="inputSportsInvolvement" placeholder="Sports involvement">
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12 text-center">
-                                            <button type="submit" class="btn btn-primary w-100">Update</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

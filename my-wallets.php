@@ -14,7 +14,7 @@
 
                         <ul class="cial-sidebar-menu-list">
                             <li class="cial-sidebar-menu-item">
-                                <a href="profile.php" class="cial-sidebar-menu-link active">
+                                <a href="profile.php" class="cial-sidebar-menu-link">
                                     <svg id="person_outline_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path id="Path_2006" data-name="Path 2006" d="M0,0H24V24H0Z" fill="none"/>
                                         <path id="Path_2007" data-name="Path 2007" d="M12,5.9A2.1,2.1,0,1,1,9.9,8,2.1,2.1,0,0,1,12,5.9m0,9c2.97,0,6.1,1.46,6.1,2.1v1.1H5.9V17c0-.64,3.13-2.1,6.1-2.1M12,4a4,4,0,1,0,4,4A4,4,0,0,0,12,4Zm0,9c-2.67,0-8,1.34-8,4v3H20V17C20,14.34,14.67,13,12,13Z" fill="#fff"/>
@@ -23,7 +23,7 @@
                                 </a>
                             </li>
                             <li class="cial-sidebar-menu-item">
-                                <a href="my-appointment.php" class="cial-sidebar-menu-link">
+                                <a href="my-appointment.php" class="cial-sidebar-menu-link ">
                                     <svg id="book_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path id="Path_2016" data-name="Path 2016" d="M0,0H24V24H0Z" fill="none"/>
                                         <path id="Path_2017" data-name="Path 2017" d="M18,2H6A2.006,2.006,0,0,0,4,4V20a2.006,2.006,0,0,0,2,2H18a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,18,2ZM9,4h2V9l-1-.75L9,9Zm9,16H6V4H7v9l3-2.25L13,13V4h5Z" fill="#fff"/>
@@ -32,7 +32,7 @@
                                 </a>
                             </li>
                             <li class="cial-sidebar-menu-item">
-                                <a href="my-lab-test.php" class="cial-sidebar-menu-link">
+                                <a href="my-lab-test.php" class="cial-sidebar-menu-link ">
                                     <svg id="science_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g id="Group_985" data-name="Group 985">
                                             <rect id="Rectangle_35" data-name="Rectangle 35" width="24" height="24" fill="none"/>
@@ -79,7 +79,7 @@
                                 </a>
                             </li>
                             <li class="cial-sidebar-menu-item">
-                                <a href="my-questions.php" class="cial-sidebar-menu-link">
+                                <a href="my-questions.php" class="cial-sidebar-menu-link ">
                                     <svg id="live_help_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path id="Path_2030" data-name="Path 2030" d="M0,0H24V24H0Z" fill="none"/>
                                         <path id="Path_2031" data-name="Path 2031" d="M19,2H5A2,2,0,0,0,3,4V18a2,2,0,0,0,2,2H9l3,3,3-3h4a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,19,2Zm0,16H14.17l-.59.59L12,20.17l-1.59-1.59L9.83,18H5V4H19Zm-8-3h2v2H11Zm1-8a2.006,2.006,0,0,1,2,2c0,2-3,1.75-3,5h2c0-2.25,3-2.5,3-5A4,4,0,0,0,8,9h2A2.006,2.006,0,0,1,12,7Z" fill="#fff"/>
@@ -88,7 +88,7 @@
                                 </a>
                             </li>
                             <li class="cial-sidebar-menu-item">
-                                <a href="my-wallets.php" class="cial-sidebar-menu-link">
+                                <a href="my-wallets.php" class="cial-sidebar-menu-link active">
                                     <svg id="account_balance_wallet_black_24dp_1_" data-name="account_balance_wallet_black_24dp (1)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path id="Path_2032" data-name="Path 2032" d="M0,0H24V24H0Z" fill="none"/>
                                         <path id="Path_2033" data-name="Path 2033" d="M21,7.28V5a2.006,2.006,0,0,0-2-2H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V16.72A2,2,0,0,0,22,15V9a2,2,0,0,0-1-1.72ZM20,9v6H13V9ZM5,19V5H19V7H13a2.006,2.006,0,0,0-2,2v6a2.006,2.006,0,0,0,2,2h6v2Z" fill="#fff"/>
@@ -149,144 +149,85 @@
             <div class="col col-12 col-md-12 col-lg-8">
                 <div class="ciam-dashboard-content">
                     <div class="ciam-dashboard-content__inner">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab" aria-controls="personal" aria-selected="true">Personal</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="medical-tab" data-bs-toggle="tab" data-bs-target="#medical" type="button" role="tab" aria-controls="medical" aria-selected="false">Medical</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="lifestyle-tab" data-bs-toggle="tab" data-bs-target="#lifestyle" type="button" role="tab" aria-controls="lifestyle" aria-selected="false">Lifestyle</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="profileTabContent">
-                            <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
-                                <div class="ciam-tab-content">
-                                    <form class="row g-3">
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputFirstname" class="form-label">First name</label>
-                                            <input type="text" class="form-control" id="Firstname" placeholder="First name">
+                        <div class="ciam-wallet-content">
+                            <div class="ciam-wallet-balance">
+                                <h3 class="ciam-wallet-balance-title">Current Wallet Balance: <span>$499</span></h3>
+                            </div>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="walletTransactionHistory-tab" data-bs-toggle="tab" data-bs-target="#walletTransactionHistory" type="button" role="tab" aria-controls="walletTransactionHistory" aria-selected="true">Wallet Transaction History</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="requestForRedemption-tab" data-bs-toggle="tab" data-bs-target="#requestForRedemption" type="button" role="tab" aria-controls="requestForRedemption" aria-selected="false">Request for Redemption</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="profileTabContent">
+                                <div class="tab-pane fade show active" id="walletTransactionHistory" role="tabpanel" aria-labelledby="walletTransactionHistory-tab">
+                                    <div class="ciam-tab-content">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Transaction ID</th>
+                                                        <th scope="col">Transaction Amount</th>
+                                                        <th scope="col">Transaction Date</th>
+                                                        <th scope="col">Order ID/Service ID</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1234567489</td>
+                                                        <td>$149</td>
+                                                        <td>18 sep 2021</td>
+                                                        <td>9875632147</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1234567489</td>
+                                                        <td>$149</td>
+                                                        <td>18 sep 2021</td>
+                                                        <td>9875632147</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1234567489</td>
+                                                        <td>$149</td>
+                                                        <td>18 sep 2021</td>
+                                                        <td>9875632147</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1234567489</td>
+                                                        <td>$149</td>
+                                                        <td>18 sep 2021</td>
+                                                        <td>9875632147</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1234567489</td>
+                                                        <td>$149</td>
+                                                        <td>18 sep 2021</td>
+                                                        <td>9875632147</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1234567489</td>
+                                                        <td>$149</td>
+                                                        <td>18 sep 2021</td>
+                                                        <td>9875632147</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputLastname" class="form-label">Last name</label>
-                                            <input type="text" class="form-control" id="Lastname" placeholder="Last name">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputEmailId" class="form-label">Email id</label>
-                                            <input type="email" class="form-control" id="inputEmailId" placeholder="Email id">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputContactNumber" class="form-label">Contact Number</label>
-                                            <input type="text" class="form-control" id="inputContactNumber" placeholder="Contact Number">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputAge" class="form-label">Age</label>
-                                            <input type="text" class="form-control" id="inputAge" placeholder="Age">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputGender" class="form-label">Gender</label>
-                                            <input type="text" class="form-control" id="inputGender" placeholder="Gender">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputDateofBirth" class="form-label">Date of Birth</label>
-                                            <input type="date" class="form-control" id="inputDateofBirth" placeholder="Date of Birth">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputBloodGroup" class="form-label">Blood group</label>
-                                            <input type="text" class="form-control" id="inputBloodGroup" placeholder="Blood group">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputMaritalStatus" class="form-label">Marital status</label>
-                                            <input type="text" class="form-control" id="inputMaritalStatus" placeholder="Marital status">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputHeight" class="form-label">Height</label>
-                                            <input type="text" class="form-control" id="inputHeight" placeholder="Height">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputWeight" class="form-label">Weight</label>
-                                            <input type="text" class="form-control" id="inputWeight" placeholder="Weight">
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputEmergencycontact" class="form-label">Emergency contact</label>
-                                            <input type="text" class="form-control" id="inputEmergencycontact" placeholder="Emergency contact">
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputAddress" class="form-label">Address</label>
-                                            <textarea  class="form-control" name="" id="inputAddress" rows="4" placeholder="Address"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputAddress" class="form-label">Update photo</label>
-                                            <div class="ciam-fileInput">
-                                                <input type="file" class="form-control">
-                                                <span class="ciam-fileInput-text">+ Choose New Profile photo</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="requestForRedemption" role="tabpanel" aria-labelledby="requestForRedemption-tab">
+                                    <div class="ciam-tab-content">
+                                        <form class="row g-3">
+                                            <div class="col col-12 col-md-12 col-lg-10">
+                                                <label for="inputAmount" class="form-label">Amount</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="inputAmount" placeholder="Enter Amount" >
+                                                    <button class="input-group-text btn btn-primary" id="basic-addon2">Submit</button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12 text-center">
-                                            <button type="submit" class="btn btn-primary w-100">Update</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="medical" role="tabpanel" aria-labelledby="medical-tab">
-                                <div class="ciam-tab-content">
-                                    <form class="row g-3">
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputDetailsofAllergies" class="form-label">Details of allergies</label>
-                                            <textarea  class="form-control" name="" id="inputDetailsofAllergies" rows="4" placeholder="Details of allergies"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputCurrentPastMedications" class="form-label">Current & Past Medications</label>
-                                            <textarea  class="form-control" name="" id="inputCurrentPastMedications" rows="4" placeholder="Current & Past Medications"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputPastSurgeryInjury" class="form-label">Past surgery or injury</label>
-                                            <textarea  class="form-control" name="" id="inputPastSurgeryInjury" rows="4" placeholder="Past surgery or injury"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12">
-                                            <label for="inputAnyChronicDisease" class="form-label">Any chronic disease</label>
-                                            <textarea  class="form-control" name="" id="inputAnyChronicDisease" rows="4" placeholder="Any chronic disease"></textarea>
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12 text-center">
-                                            <button type="submit" class="btn btn-primary w-100">Update</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="lifestyle" role="tabpanel" aria-labelledby="lifestyle-tab">
-                                <div class="ciam-tab-content">
-                                    <form class="row g-3">
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputSmoking" class="form-label">Smoking</label>
-                                            <select id="inputSmoking" class="form-select">
-                                                <option selected>Yes</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputAlchol" class="form-label">Alchol</label>
-                                            <select id="inputAlchol" class="form-select">
-                                                <option selected>Yes</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputWorkoutLevel" class="form-label">Workout level</label>
-                                            <select id="inputWorkoutLevel" class="form-select">
-                                                <option selected>High</option>
-                                                <option>Medium</option>
-                                                <option>Low</option>
-                                            </select>
-                                        </div>
-                                        <div class="col col-12 col-md-6 col-lg-6">
-                                            <label for="inputSportsInvolvement" class="form-label">Sports involvement</label>
-                                            <input type="text" class="form-control" id="inputSportsInvolvement" placeholder="Sports involvement">
-                                        </div>
-                                        <div class="col col-12 col-md-12 col-lg-12 text-center">
-                                            <button type="submit" class="btn btn-primary w-100">Update</button>
-                                        </div>
-                                    </form>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -142,7 +142,7 @@ a {
 .form-check-input {
     width: 20px;
     height: 20px;
-    border: 1px solid #DDDDDD;
+    border: 1px solid rgba(37, 37, 37, 0.5);
     margin-top: 2px;
     margin-right: 10px;
 }
@@ -154,6 +154,21 @@ a {
 
 .form-check-input:focus {
     box-shadow: none;
+}
+
+.btn-success {
+    background-color: #409690;
+    border-color: #409690;
+}
+
+.btn-check:active+.btn-success,
+.btn-check:checked+.btn-success,
+.btn-success.active,
+.btn-success:active,
+.show>.btn-success.dropdown-toggle,
+.btn-success:hover {
+    background-color: #2c7e78;
+    border-color: #2c7e78;
 }
 
 
@@ -420,7 +435,6 @@ a {
 
 .ciam-slide-card {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -941,6 +955,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    align-items: center;
 }
 
 .ciam-review-user {
@@ -986,6 +1001,7 @@ a {
     padding: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
+    background-color: #fff;
 }
 
 .ciam-review-description {
@@ -1009,8 +1025,443 @@ a {
     color: #409690;
 }
 
+.ciam-doctor-designation {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ciam-doctor-details-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ciam-doctor-details-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.ciam-doctor-details-item svg {
+    margin-right: 15px;
+}
+
 
 /********************* My Review Page End *********************/
+
+
+/********************* Search Profile Page End *********************/
+
+.ciam-search-landing-section {
+    padding: 250px 150px;
+    background-image: url(../images/search-landing-back.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.ciam-search-landing-section .ciam-section-title {
+    margin: 0 auto 130px;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    width: 950px;
+}
+
+.ciam-search-landing-section .ciam-searchBar-content {
+    width: 50%;
+}
+
+.ciam-search-landing-section .ciam-searchBar__inner {
+    width: 980px;
+    margin: auto;
+}
+
+.ciam-search-landing-section .ciam-searchBar-content:nth-child(2) .ciam-searchBar-input::before {
+    content: "\e8b6";
+    display: block;
+}
+
+.ciam-serch-profile-section {
+    background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
+}
+
+.ciam-filter-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1D1A2F;
+}
+
+.ciam-filter-bar {
+    background-color: #ffff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.ciam-filter-bar .accordion-button {
+    padding: 0;
+    color: #1D1A2F;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.ciam-filter-bar .accordion-item {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.ciam-filter-bar .accordion-body {
+    padding: 0;
+}
+
+.ciam-filter-check-content .form-check {
+    margin-bottom: 10px;
+}
+
+.ciam-filter-bar .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg id='expand_more_black_24dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_2057' data-name='Path 2057' d='M24,24H0V0H24Z' fill='none' opacity='0.87'/%3E%3Cpath id='Path_2058' data-name='Path 2058' d='M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z' fill='%231d1a2f'/%3E%3C/svg%3E%0A");
+}
+
+.ciam-filter-bar .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg id='expand_more_black_24dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_2057' data-name='Path 2057' d='M24,24H0V0H24Z' fill='none' opacity='0.87'/%3E%3Cpath id='Path_2058' data-name='Path 2058' d='M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z' fill='%231d1a2f'/%3E%3C/svg%3E%0A");
+    transform: rotate( -180deg);
+}
+
+.ciam-shop-product-slider {
+    margin-bottom: 70px;
+}
+
+.ciam-shop-medicine-content .ciam-product-card {
+    border: 1px solid #1B172D;
+    border-radius: 10px;
+}
+
+.ciam-shop-product-slider .ciam-slide-card-footer {
+    padding: 0;
+    border-top: 1px solid #1B172D;
+}
+
+.ciam-shop-product-slider .ciam-product-card {
+    border: 1px solid #1B172D;
+    border-radius: 10px;
+}
+
+.ciam-shop-product-slider .ciam-slide-card-footer .btn {
+    padding: 20px 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.ciam-shop-product-slider .ciam-slide-card-img {
+    padding-bottom: 15px;
+}
+
+.ciam-shop-product-slider .ciam-slide-card-img::after {
+    display: none;
+}
+
+.ciam-shop-medicine-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+
+/********************* Search Profile Page End *********************/
+
+
+/********************* Cart Page Start *********************/
+
+.ciam-cart-section {
+    background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
+}
+
+.ciam-cart-content {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    height: 100%;
+}
+
+.ciam-cart-table .table {
+    vertical-align: middle;
+}
+
+.ciam-cart-product-img img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #1B172D;
+}
+
+.ciam-cart-table tr:last-child td,
+.ciam-cart-table tr:last-child th {
+    border-bottom-color: #1B172D;
+}
+
+.ciam-cart-total-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    height: 100%;
+}
+
+.ciam-cart-total-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1B172D;
+}
+
+
+/********************* Cart Page End *********************/
+
+
+/********************* Ask Question Page Start *********************/
+
+.ciam-ask-question-section {
+    background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
+}
+
+.ciam-ask-question-content {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 16%);
+}
+
+.ciam-ask-question-content__inner {
+    padding: 30px;
+    border: 1px solid #1B172D;
+    border-radius: 10px;
+}
+
+.ciam-ask-question {
+    padding: 20px 25px;
+    border-radius: 10px;
+    background-color: #ffff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 30px;
+}
+
+.ciam-ask-question-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.ciam-question-answer-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ciam-question-answer-user img {
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+}
+
+.ciam-question-answer-user label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ciam-question-answer-card {
+    padding: 25px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+}
+
+.ciam-question-answer-card:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.ciam-question-answer-card-header {
+    background-color: rgba(27, 23, 45, 0.1);
+    border-radius: 10px 10px 0 0;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+}
+
+.ciam-question-answer-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.ciam-card-question {
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 50%;
+}
+
+.ciam-question-answer-title label {
+    font-size: 18px;
+    color: #409690;
+    font-weight: 600;
+}
+
+.ciam-question-card-answer {
+    padding: 10px 0;
+}
+
+.ciam-question-card-answer-description {
+    margin-bottom: 0;
+}
+
+.ciam-question-card-answer-user {
+    font-weight: 600;
+}
+
+.ciam-question-answer-card-body .input-group {
+    margin-top: 20px;
+}
+
+
+/********************* Ask Question Page End *********************/
+
+
+/********************* Service Page Start *********************/
+
+.ciam-service-landing {
+    background-image: url(../images/service-back.png);
+    background-size: cover;
+    background-position: center;
+    padding: 300px 0;
+}
+
+.ciam-service-landing-content {
+    text-align: center;
+    color: #fff;
+}
+
+.ciam-our-services {
+    background-image: linear-gradient(#A3D9FF, #D5FF98);
+}
+
+.ciam-patient-testimonial {
+    background-image: linear-gradient(#D5FF98, #FFD26C);
+}
+
+.ciam-service-landing-content .ciam-section-subtitle {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.ciam-service {
+    background-image: linear-gradient(#FFD26C, #FF9FF0);
+}
+
+.ciam-service__inner .row {
+    align-items: center;
+}
+
+.ciam-service-img {
+    text-align: center;
+}
+
+.ciam-service-content .ciam-section-description {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.ciam-section-label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.ciam-search-form-content,
+.modal-content {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.modal-header {
+    padding: 0;
+    padding-bottom: 25px;
+    border-bottom-color: #1D1A2F;
+}
+
+.ciam-search-form-title,
+.modal-title {
+    color: #1D1A2F;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.ciam-search-form-content .form-select,
+.ciam-search-form-content .form-control,
+.ciam-BookNowModal .form-select,
+.ciam-BookNowModal .form-control {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 10px 15px;
+}
+
+.ciam-search-form-content .col-form-label,
+.ciam-BookNowModal .col-form-label {
+    color: #1D1A2F;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.ciam-book-appoinment-content .ciam-review-card {
+    display: flex;
+    padding: 0;
+}
+
+.ciam-book-appoinment-content .ciam-review-card-detail {
+    padding: 30px 40px;
+}
+
+.ciam-book-appoinment-content .ciam-review-card-img {
+    min-width: 350px;
+}
+
+.ciam-book-appoinment-content .ciam-review-card-img img {
+    border-radius: 10px 0 0 10px;
+}
+
+.ciam-starting-price {
+    color: #409690;
+}
+
+.ciam-search-form-title {
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #252525;
+}
+
+.ciam-form-search-landing-section {
+    padding: 50px 0;
+}
+
+
+/********************* Service Page End *********************/
 
 
 /********************* Footer Start *********************/

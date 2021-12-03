@@ -78,6 +78,40 @@ $(document).ready(function() {
         ]
     });
 
+    $('.ciam-shop-product-slider').slick({
+        infinite: true,
+        dots: true,
+        arrows: true,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 1700,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     $('.ciam-testimonial-slider').slick({
         infinite: true,
         dots: true,

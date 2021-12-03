@@ -113,7 +113,7 @@
                                 </a>
                             </li>
                             <li class="cial-sidebar-menu-item">
-                                <a href="#" class="cial-sidebar-menu-link">
+                                <a href="account-setting.php" class="cial-sidebar-menu-link">
                                     <svg id="manage_accounts_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g id="Group_1071" data-name="Group 1071">
                                             <path id="Path_2041" data-name="Path 2041" d="M0,0H24V24H0Z" fill="none"/>

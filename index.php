@@ -31,7 +31,7 @@
             </div>
         </form>
     </div>
-</div>    
+</div>
 <!-- Site SearchBar End -->
 
 <!-- Landing Section Start -->

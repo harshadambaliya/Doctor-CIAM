@@ -70,7 +70,7 @@
                                 </a>
                             </li>
                             <li class="cial-sidebar-menu-item">
-                                <a href="#" class="cial-sidebar-menu-link">
+                                <a href="my-reviews.php" class="cial-sidebar-menu-link">
                                     <svg id="star_border_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path id="Path_2028" data-name="Path 2028" d="M0,0H24V24H0Z" fill="none"/>
                                         <path id="Path_2029" data-name="Path 2029" d="M22,9.24l-7.19-.62L12,2,9.19,8.63,2,9.24l5.46,4.73L5.82,21,12,17.27,18.18,21l-1.63-7.03ZM12,15.4,8.24,17.67l1-4.28L5.92,10.51l4.38-.38L12,6.1l1.71,4.04,4.38.38L14.77,13.4l1,4.28Z" fill="#fff"/>
@@ -113,7 +113,7 @@
                                 </a>
                             </li>
                             <li class="cial-sidebar-menu-item">
-                                <a href="#" class="cial-sidebar-menu-link">
+                                <a href="account-setting.php" class="cial-sidebar-menu-link">
                                     <svg id="manage_accounts_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g id="Group_1071" data-name="Group 1071">
                                             <path id="Path_2041" data-name="Path 2041" d="M0,0H24V24H0Z" fill="none"/>
