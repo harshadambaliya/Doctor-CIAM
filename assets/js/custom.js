@@ -122,6 +122,37 @@ $(document).ready(function() {
         slidesToScroll: 1
     });
 
+    $('.ciam-avaolable-slot-date-list').slick({
+        infinite: true,
+        dots: false,
+        arrows: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 
     var ciamServiceCardWidth = $('.ciam-service-card').width();
     $('.ciam-service-card').height(ciamServiceCardWidth);

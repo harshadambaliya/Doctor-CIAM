@@ -171,6 +171,19 @@ a {
     border-color: #2c7e78;
 }
 
+.btn-danger {
+    background-image: linear-gradient( 90deg, #F12929, #F66F6F);
+}
+
+.btn-check:active+.btn-danger:focus,
+.btn-check:checked+.btn-danger:focus,
+.btn-danger.active:focus,
+.btn-danger:active:focus,
+.show>.btn-danger.dropdown-toggle:focus,
+.btn:focus {
+    box-shadow: none;
+}
+
 
 /********************* Deafult End *********************/
 
@@ -1002,14 +1015,11 @@ a {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
     background-color: #fff;
+    margin-bottom: 20px;
 }
 
 .ciam-review-description {
     margin-bottom: 0;
-}
-
-.ciam-review-content .col {
-    margin-bottom: 20px;
 }
 
 .ciam-wallet-balance-title {
@@ -1462,6 +1472,407 @@ a {
 
 
 /********************* Service Page End *********************/
+
+
+/********************* Login Page Start *********************/
+
+.ciam-login-landing-section {
+    background-image: url(../images/login-back.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.ciam-login-form-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ciam-login-form-header .ciam-search-form-title {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ciam-login-form-header .ciam-search-form-title:hover,
+.ciam-search-form-title.active {
+    color: #409690;
+    border-bottom-color: #409690;
+}
+
+.ciam-login-form-bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ciam-forgot-password-link {
+    font-size: 18px;
+    color: #409690;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ciam-forgot-password-link:hover {
+    color: #409690;
+    opacity: 0.8;
+}
+
+.ciam-login-form-bottom-content .form-check-label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ciam-login-form-bottom-content .form-check-input {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: navajowhite;
+}
+
+.ciam-login-form-bottom-content .form-check-input:checked[type=checkbox] {
+    background-color: #409690;
+}
+
+
+/********************* Login Page End *********************/
+
+
+/********************* Doctor Booking Request Page Start *********************/
+
+.ciam-booking-request-card .ciam-appointment-card-footer {
+    display: flex;
+    align-items: center;
+}
+
+.ciam-booking-request-card .ciam-appointment-card-footer .btn {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.ciam-booking-request-card .ciam-appointment-card-footer .btn:last-child {
+    margin-right: 0;
+}
+
+
+/********************* Doctor Booking Request Page End *********************/
+
+
+/********************* Doctor Profile Details Page Start *********************/
+
+.ciam-profile-details-section {
+    background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
+}
+
+.ciam-profile-details-content {
+    padding: 50px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.ciam-profile-details-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ciam-profile-doctor-name {
+    font-size: 38px;
+    font-weight: 600;
+    color: #323231;
+    margin-bottom: 0;
+}
+
+.ciam-profile-details-header img {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.ciam-profile-details-head {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #1B172D;
+    margin-bottom: 50px;
+}
+
+.ciam-profile-details-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1D1A2F;
+    margin-bottom: 0;
+}
+
+.ciam-profile-details-label {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.ciam-profile-details-description {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.ciam-profile-details-description:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.ciam-profile-details-body__inner {
+    margin-bottom: 50px;
+}
+
+.ciam-profile-details-body__inner .row:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.ciam-profile-uploded-img-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ciam-profile-uploded-img-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.ciam-profile-uploded-img-item img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.ciam-availability-available {
+    color: #858504;
+}
+
+.ciam-doctor-slot-price {
+    margin-left: 15px;
+    opacity: 0.5;
+}
+
+.ciam-avaolable-slot-date-item {
+    text-align: center;
+}
+
+.ciam-avaolable-slot-date {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.ciam-avaolable-slot-description {
+    font-size: 14px;
+    color: #858504;
+    margin-bottom: 0;
+}
+
+.ciam-avaolable-slot-date.active {
+    opacity: 1;
+}
+
+.ciam-avaolable-slot-date-list {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #1B172D;
+    margin-bottom: 25px;
+}
+
+.ciam-avaolable-slot-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.ciam-avaolable-slot-title span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ciam-avaolable-slot-item .form-check-label {
+    padding: 10px 30px;
+    border: 1px solid #409690;
+    color: #409690;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ciam-avaolable-slot-list {
+    padding: 0;
+    margin-bottom: 25px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ciam-avaolable-slot-item {
+    margin-right: 15px;
+}
+
+.ciam-avaolable-slot-item .form-check {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.ciam-avaolable-slot-item .form-check-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.ciam-avaolable-slot-item .form-check-input:checked~.form-check-label {
+    border: 1px solid #1D1A2F;
+    color: #ffffff;
+    background-color: #1D1A2F;
+}
+
+.ciam-profile-details-link {
+    color: #409690;
+    text-decoration: none;
+}
+
+.ciam-profile-details-link:hover {
+    color: #409690;
+    opacity: 0.8;
+}
+
+.ciam-profile-details-body__inner .ciam-fileInput-text {
+    display: inline-block;
+    background-color: transparent;
+    padding: 0;
+    color: #409690;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ciam-patient-profile img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: auto;
+}
+
+
+/********************* Doctor Profile Details Page End *********************/
+
+
+/********************* Chat Page Start *********************/
+
+.ciam-chat-section {
+    background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
+}
+
+.ciam-chat-content {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.ciam-chat-header {
+    padding: 20px 30px;
+    background-color: #1B172D;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ciam-chat-user-detail {
+    display: flex;
+    align-items: center;
+}
+
+.ciam-chat-user-detail img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.ciam-chat-user-detail label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.ciam-chat-content__inner {
+    padding: 30px;
+    border: 1px solid #1B172D;
+    border-radius: 10px;
+}
+
+.ciam-chat-text {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ciam-chat-text.ciam-chat-current-user-text {
+    justify-content: flex-end;
+}
+
+.ciam-chat-text__inner {
+    display: inline-block;
+    max-width: 75%;
+}
+
+.ciam-chat-description {
+    padding: 15px 20px;
+    background-color: #8FF1EB;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 10px;
+}
+
+.ciam-chat-time {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+}
+
+.ciam-chat-current-user-text .ciam-chat-description {
+    background-color: #48AEA8;
+    border-radius: 10px 0 10px 10px;
+    color: #fff;
+}
+
+.ciam-chat-current-user-text .ciam-chat-time {
+    justify-content: flex-end;
+}
+
+.ciam-chat-time svg {
+    margin-right: 10px;
+}
+
+
+/********************* Chat Page End *********************/
 
 
 /********************* Footer Start *********************/
