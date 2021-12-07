@@ -451,6 +451,7 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-color: #fff;
 }
 
 .ciam-slide-card-img img {
@@ -465,6 +466,7 @@ a {
     padding: 20px 15px;
     background-color: #fff;
     flex: 1 0 auto;
+    border-radius: 10px;
 }
 
 .ciam-slide-card-footer {
@@ -832,7 +834,7 @@ a {
 }
 
 .nav-tabs .nav-link {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #252525;
     border: none;
@@ -878,6 +880,14 @@ a {
     opacity: 0.5;
 }
 
+.ciam-btn-fileInput .ciam-fileInput-text {
+    display: inline-block;
+    padding: 8px 35px;
+    color: #fff;
+    background-color: #1b172d;
+    border-radius: 0;
+}
+
 
 /********************* Profile Page End *********************/
 
@@ -915,8 +925,28 @@ a {
     font-weight: 500;
 }
 
+.ciam-card-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.ciam-card-details span:first-child {
+    margin-right: 5px;
+}
+
 .ciam-card-details:last-child {
     margin-bottom: 0;
+}
+
+.ciam-card-details-text {
+    color: #1D1A2F;
+    text-decoration: none;
+}
+
+a.ciam-card-details-text:hover {
+    color: #1D1A2F;
+    opacity: 0.8;
 }
 
 .ciam-card-details-title {
@@ -1146,6 +1176,10 @@ a {
 
 .ciam-shop-product-slider {
     margin-bottom: 70px;
+}
+
+.ciam-shop-medicine-content .col {
+    margin-bottom: 20px;
 }
 
 .ciam-shop-medicine-content .ciam-product-card {
@@ -1752,7 +1786,8 @@ a {
     opacity: 0.8;
 }
 
-.ciam-profile-details-body__inner .ciam-fileInput-text {
+.ciam-profile-details-body__inner .ciam-fileInput-text,
+.ciam-card-details-text .ciam-fileInput-text {
     display: inline-block;
     background-color: transparent;
     padding: 0;
@@ -1873,6 +1908,81 @@ a {
 
 
 /********************* Chat Page End *********************/
+
+
+/********************* Pharmacy Medicine Order Page Start *********************/
+
+.ciam-medicine-order-card {
+    border: 1px solid #1B172D;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 20px;
+}
+
+.ciam-medicine-order-card>.row>.col:first-child {
+    border-right: 1px solid #1B172D;
+}
+
+.ciam-medicine-order-card-body {
+    padding: 20px 30px;
+}
+
+.ciam-medicine-patient-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.ciam-medicine-order-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ciam-medicine-patient-detail img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 20px;
+}
+
+.ciam-medicine-patient-name {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.ciam-delivery-agent-title {
+    font-size: 16px;
+    color: #252525;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.ciam-delivery-agent-content {
+    display: flex;
+    align-items: center;
+}
+
+.ciam-delivery-agent-img {
+    margin-right: 20px;
+}
+
+.ciam-delivery-agent-img img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgb(0 0 0 / 16%);
+}
+
+
+/********************* Pharmacy Medicine Order Page End *********************/
 
 
 /********************* Footer Start *********************/
