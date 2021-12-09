@@ -2086,5 +2086,18 @@ a.ciam-card-details-text:hover {
     }
 }
 
+@media (max-width: 1199px) {
+    .ciam-searchBar-btn {
+        padding: 10px 35px;
+    }
+    .ciam-searchBar-content {
+        padding: 10px 30px;
+    }
+    .ciam-section-title {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+}
+
 
 /********************* Responsive End *********************/

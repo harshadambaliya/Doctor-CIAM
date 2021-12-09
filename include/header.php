@@ -19,7 +19,7 @@
 <body class="ciam-site">
     <!-- Site Header Start -->
     <header class="ciam-site-header">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-xl ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/logo.png" alt="logo" class="img-fluid">
