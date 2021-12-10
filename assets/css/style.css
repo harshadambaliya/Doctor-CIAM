@@ -184,6 +184,36 @@ a {
     box-shadow: none;
 }
 
+.navbar-toggler-icons {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #1B172D;
+    margin-bottom: 5px;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icons:nth-child(1) {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+    top: 5px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icons:nth-child(2) {
+    opacity: 0;
+    margin-bottom: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icons:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+}
+
+.ciam-menu-open {
+    overflow: hidden;
+}
+
 
 /********************* Deafult End *********************/
 
@@ -452,6 +482,7 @@ a {
     flex-direction: column;
     height: 100%;
     background-color: #fff;
+    border-radius: 10px;
 }
 
 .ciam-slide-card-img img {
@@ -1105,6 +1136,7 @@ a.ciam-card-details-text:hover {
     color: #fff;
     text-align: center;
     width: 950px;
+    max-width: 100%;
 }
 
 .ciam-search-landing-section .ciam-searchBar-content {
@@ -1114,6 +1146,7 @@ a.ciam-card-details-text:hover {
 .ciam-search-landing-section .ciam-searchBar__inner {
     width: 980px;
     margin: auto;
+    max-width: 100%;
 }
 
 .ciam-search-landing-section .ciam-searchBar-content:nth-child(2) .ciam-searchBar-input::before {
@@ -2096,6 +2129,226 @@ a.ciam-card-details-text:hover {
     .ciam-section-title {
         font-size: 38px;
         margin-bottom: 15px;
+    }
+    .ciam-section {
+        padding: 70px 0;
+    }
+    .ciam-landing-section {
+        padding: 0;
+    }
+    .ciam-testimonial-slider .slick-arrow {
+        left: -20px;
+    }
+    .ciam-testimonial-slider .slick-next.slick-arrow {
+        left: unset;
+        right: -20px;
+    }
+    .navbar-toggler {
+        order: 3;
+        position: relative;
+        z-index: 101;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .dropdown.ciam-user-login-btn {
+        order: 2;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .ciam-user-login-btn .dropdown-toggle img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+    }
+    .navbar-nav {
+        min-height: 100vh;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+    }
+    .ciam-our-mission>.ciam-section-heading {
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ciam-section {
+        padding: 50px 0;
+    }
+    .ciam-landing-section {
+        padding: 0;
+    }
+    .ciam-searchBar-content {
+        padding: 5px 10px;
+    }
+    .ciam-searchBar-btn {
+        padding: 5px 15px;
+    }
+    .ciam-searchBar-btn .material-icons {
+        font-size: 30px;
+    }
+    .ciam-searchBar-content .form-label {
+        margin-bottom: 5px;
+    }
+    .ciam-our-mission>.ciam-section-heading {
+        margin-bottom: 100px;
+    }
+    .ciam-footer-content {
+        margin-bottom: 30px;
+    }
+    .ciam-site-footer-content {
+        padding: 50px 0 20px;
+    }
+    .ciam-service-landing-content .ciam-section-subtitle {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .ciam-service-content .ciam-section-description {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .ciam-section-label {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .ciam-service-content .ciam-section-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .ciam-filter-bar {
+        margin-bottom: 15px;
+    }
+    .ciam-search-landing-section .ciam-section-title {
+        margin: 0 auto 60px;
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .btn {
+        padding: 6px 25px;
+    }
+    .ciam-searchBar__inner {
+        flex-wrap: wrap;
+    }
+    .ciam-searchBar-content {
+        width: 100%;
+        border-bottom: 1px solid #1B172D;
+    }
+    .ciam-searchBar-content:not(:first-child) {
+        border-left: none;
+    }
+    .ciam-searchBar-btn-content {
+        width: 100%;
+    }
+    .ciam-searchBar-btn {
+        padding: 10px 15px;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+    .navbar-brand img {
+        max-width: 65px;
+    }
+    .ciam-user-login-btn .dropdown-toggle img {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+    .navbar {
+        padding: 15px 10px;
+    }
+    .ciam-landing-slide img {
+        min-height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .ciam-section-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .ciam-service-card {
+        height: 100% !important;
+    }
+    .ciam-download-application-img {
+        margin-bottom: 30px;
+    }
+    .ciam-footer-description {
+        margin-bottom: 15px;
+    }
+    .ciam-social-item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .ciam-footer-menu-title {
+        margin-bottom: 15px;
+    }
+    .ciam-footer-menu-item {
+        margin-bottom: 5px;
+    }
+    .ciem-site-footer-info {
+        padding: 15px 0;
+    }
+    .ciam-service-img {
+        margin-bottom: 20px;
+    }
+    .ciam-service__inner:nth-child(2) .row,
+    .ciam-service__inner:nth-child(4) .row {
+        flex-direction: column-reverse;
+    }
+    .ciam-service-img img {
+        width: 270px;
+        max-width: 100%;
+    }
+    .ciam-service-content .ciam-section-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .ciam-search-form-content,
+    .modal-content {
+        padding: 10px;
+    }
+    .ciam-search-form-title,
+    .modal-title {
+        font-size: 20px;
+    }
+    .modal-body {
+        padding: 5px;
+    }
+    .ciam-review-card-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+    .ciam-review-card-heading .ciam-review-user {
+        margin-bottom: 20px;
+    }
+    .ciam-doctor-details-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ciam-doctor-details-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .ciam-search-landing-section .ciam-searchBar-content {
+        width: 100%;
+    }
+    .ciam-search-landing-section .ciam-section-title {
+        margin: 0 auto 30px;
+        font-size: 34px;
+    }
+    .ciam-shop-medicine-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-left: 0;
+        text-align: center;
     }
 }
 

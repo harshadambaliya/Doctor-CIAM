@@ -35,7 +35,7 @@
 <section class="ciam-serch-profile-section ciam-section">
     <div class="container">
         <div class="row">
-            <div class="col col-12 col-md-3 col-lg-3">
+            <div class="col col-12 col-md-12 col-lg-3">
                 <div class="ciam-filter-bar">
                     <h3 class="ciam-filter-title">Filter by </h3>
                     <div class="accordion" id="ciamFilterAccordion">
@@ -208,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-12 col-md-9 col-lg-9">
+            <div class="col col-12 col-md-12 col-lg-9">
                 <div class="ciam-review-content">
                     <div class="row">
                         <div class="col col-12 col-md-12 col-lg-12">

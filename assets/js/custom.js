@@ -28,10 +28,10 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 991,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 3,
+                    slidesToScroll: 1
                 }
             },
             {
@@ -69,10 +69,10 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 991,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 3,
+                    slidesToScroll: 1
                 }
             },
             {
@@ -103,10 +103,17 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 1199,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
                 }
             },
             {
@@ -126,7 +133,13 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                arrows: false
+            }
+        }]
     });
 
     $('.ciam-avaolable-slot-date-list').slick({
@@ -171,4 +184,7 @@ $(document).ready(function() {
     var ciamServiceCardWidth = $('.ciam-service-card').width();
     $('.ciam-service-card').height(ciamServiceCardWidth);
 
+    $('.navbar-toggler').on('click', function() {
+        $('body').toggleClass('ciam-menu-open');
+    })
 });

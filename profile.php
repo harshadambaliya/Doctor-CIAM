@@ -186,7 +186,10 @@
                                         </div>
                                         <div class="col col-12 col-md-6 col-lg-6">
                                             <label for="inputGender" class="form-label">Gender</label>
-                                            <input type="text" class="form-control" id="inputGender" placeholder="Gender">
+                                            <select id="inputSmoking" class="form-select">
+                                                <option selected>Male</option>
+                                                <option>Female</option>
+                                            </select>
                                         </div>
                                         <div class="col col-12 col-md-6 col-lg-6">
                                             <label for="inputDateofBirth" class="form-label">Date of Birth</label>
