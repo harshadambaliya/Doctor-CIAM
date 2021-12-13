@@ -8,6 +8,11 @@
                 <div class="ciam-chat-user-detail">
                     <img src="assets/images/chat-patient-img.png" alt="chat-patient-img" class="img-fluid">
                     <label>Patient Name</label>
+                    <button class="navbar-toggler cial-sidebar-menu-toggler ms-auto d-block d-lg-none" type="button">
+                        <span class="navbar-toggler-icons"></span>
+                        <span class="navbar-toggler-icons"></span>
+                        <span class="navbar-toggler-icons"></span>
+                    </button>
                 </div>
                 <span class="ciam-chat-video-btn">
                     <svg id="videocam_black_24dp" xmlns="http://www.w3.org/2000/svg" width="45.352" height="45.352" viewBox="0 0 45.352 45.352">

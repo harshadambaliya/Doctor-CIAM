@@ -55,7 +55,7 @@
     </div>
     <div class="ciam-home-care-services-content">
         <div class="container">
-            <div class="row  row-cols-2 row-cols-md-3 row-cols-lg-5">
+            <div class="row  row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-center">
                 <div class="col">
                     <div class="ciam-service-card">
                         <div class="ciam-service-card-icon">

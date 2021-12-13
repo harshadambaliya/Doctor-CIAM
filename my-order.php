@@ -10,6 +10,11 @@
                         <div class="ciam-sidebar-user">
                             <img src="assets/images/user-img.png" alt="user-img" class="img-fluid">
                             <span>User Name</span>
+                            <button class="navbar-toggler cial-sidebar-menu-toggler ms-auto d-block d-lg-none" type="button">
+                                <span class="navbar-toggler-icons"></span>
+                                <span class="navbar-toggler-icons"></span>
+                                <span class="navbar-toggler-icons"></span>
+                            </button>
                         </div>
 
                         <ul class="cial-sidebar-menu-list">
@@ -211,7 +216,7 @@
                                                         </span>
                                                     </p>
                                                 </div>
-                                                <div class="col col-12 col-md-6 col-lg-4">
+                                                <div class="col col-12 col-md-12 col-lg-4 ">
                                                     <div class="ciam-order-card-footer text-center">
                                                         <a href="#" class="btn btn-primary">Need Help</a>
                                                     </div>
@@ -280,7 +285,7 @@
                                                         </span>
                                                     </p>
                                                 </div>
-                                                <div class="col col-12 col-md-6 col-lg-4">
+                                                <div class="col col-12 col-md-12 col-lg-4 ">
                                                     <div class="ciam-order-card-footer text-center">
                                                         <a href="#" class="btn btn-primary">Need Help</a>
                                                     </div>
@@ -349,7 +354,7 @@
                                                         </span>
                                                     </p>
                                                 </div>
-                                                <div class="col col-12 col-md-6 col-lg-4">
+                                                <div class="col col-12 col-md-12 col-lg-4 ">
                                                     <div class="ciam-order-card-footer text-center">
                                                         <a href="#" class="btn btn-primary">Need Help</a>
                                                     </div>
@@ -418,7 +423,7 @@
                                                         </span>
                                                     </p>
                                                 </div>
-                                                <div class="col col-12 col-md-6 col-lg-4">
+                                                <div class="col col-12 col-md-12 col-lg-4 ">
                                                     <div class="ciam-order-card-footer text-center">
                                                         <a href="#" class="btn btn-primary">Need Help</a>
                                                     </div>

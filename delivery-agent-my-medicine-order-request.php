@@ -10,6 +10,11 @@
                         <div class="ciam-sidebar-user">
                             <img src="assets/images/user-img.png" alt="user-img" class="img-fluid">
                             <span>User Name</span>
+                            <button class="navbar-toggler cial-sidebar-menu-toggler ms-auto d-block d-lg-none" type="button">
+                                <span class="navbar-toggler-icons"></span>
+                                <span class="navbar-toggler-icons"></span>
+                                <span class="navbar-toggler-icons"></span>
+                            </button>
                         </div>
 
                         <ul class="cial-sidebar-menu-list">
@@ -98,7 +103,7 @@
                     <div class="ciam-dashboard-content__inner">
                         <div class="ciam-appointment-content">
                             <div class="row">
-                                <div class="col col-12 col-md-6 col-lg-4">
+                                <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
                                     <div class="ciam-appointment-card ciam-booking-request-card">
                                         <div class="ciam-appointment-card-img">
                                             <img src="assets/images/appointment-img.png" alt="appointment-img" class="img-fluid">
@@ -142,7 +147,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-md-6 col-lg-4">
+                                <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
                                     <div class="ciam-appointment-card ciam-booking-request-card">
                                         <div class="ciam-appointment-card-img">
                                             <img src="assets/images/appointment-img.png" alt="appointment-img" class="img-fluid">
@@ -186,7 +191,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-md-6 col-lg-4">
+                                <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
                                     <div class="ciam-appointment-card ciam-booking-request-card">
                                         <div class="ciam-appointment-card-img">
                                             <img src="assets/images/appointment-img.png" alt="appointment-img" class="img-fluid">
@@ -230,7 +235,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-md-6 col-lg-4">
+                                <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
                                     <div class="ciam-appointment-card ciam-booking-request-card">
                                         <div class="ciam-appointment-card-img">
                                             <img src="assets/images/appointment-img.png" alt="appointment-img" class="img-fluid">
@@ -274,7 +279,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-md-6 col-lg-4">
+                                <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
                                     <div class="ciam-appointment-card ciam-booking-request-card">
                                         <div class="ciam-appointment-card-img">
                                             <img src="assets/images/appointment-img.png" alt="appointment-img" class="img-fluid">
@@ -318,7 +323,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-md-6 col-lg-4">
+                                <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
                                     <div class="ciam-appointment-card ciam-booking-request-card">
                                         <div class="ciam-appointment-card-img">
                                             <img src="assets/images/appointment-img.png" alt="appointment-img" class="img-fluid">

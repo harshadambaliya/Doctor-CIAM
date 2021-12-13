@@ -89,8 +89,8 @@ $(document).ready(function() {
         infinite: true,
         dots: true,
         arrows: true,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [{
@@ -184,7 +184,11 @@ $(document).ready(function() {
     var ciamServiceCardWidth = $('.ciam-service-card').width();
     $('.ciam-service-card').height(ciamServiceCardWidth);
 
-    $('.navbar-toggler').on('click', function() {
+    $('.ciam-site-header .navbar-toggler').on('click', function() {
         $('body').toggleClass('ciam-menu-open');
+    })
+    $('.cial-sidebar-menu-toggler').on('click', function() {
+        $(this).toggleClass('ciam-sidebar-menu-open');
+        $('.cial-sidebar-menu-list').toggleClass('ciam-menu-open');
     })
 });

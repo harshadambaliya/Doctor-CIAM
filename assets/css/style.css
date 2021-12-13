@@ -37,6 +37,7 @@
 .btn-primary.active:focus,
 .btn-primary:active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -44,8 +45,14 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 50px;
 }
@@ -91,10 +98,14 @@
 }
 
 .slick-track {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
 }
 
 a {
+    -webkit-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
 }
 
@@ -111,12 +122,16 @@ a {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 .slick-next.slick-arrow {
     left: unset;
     right: -50px;
+    -webkit-transform: translateY(-50%) rotate( 180deg);
+    -ms-transform: translateY(-50%) rotate( 180deg);
     transform: translateY(-50%) rotate( 180deg);
 }
 
@@ -129,6 +144,30 @@ a {
 .form-select,
 .form-control {
     border: 1px solid #DDDDDD;
+    color: #1D1A2F;
+    font-weight: 500;
+}
+
+.form-select::-webkit-input-placeholder,
+.form-control::-webkit-input-placeholder {
+    color: #1D1A2F;
+    font-weight: 500;
+}
+
+.form-select::-moz-placeholder,
+.form-control::-moz-placeholder {
+    color: #1D1A2F;
+    font-weight: 500;
+}
+
+.form-select:-ms-input-placeholder,
+.form-control:-ms-input-placeholder {
+    color: #1D1A2F;
+    font-weight: 500;
+}
+
+.form-select::-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
     color: #1D1A2F;
     font-weight: 500;
 }
@@ -153,6 +192,7 @@ a {
 }
 
 .form-check-input:focus {
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -172,6 +212,8 @@ a {
 }
 
 .btn-danger {
+    background-image: -webkit-gradient( linear, left top, right top, from(#F12929), to(#F66F6F));
+    background-image: -o-linear-gradient( left, #F12929, #F66F6F);
     background-image: linear-gradient( 90deg, #F12929, #F66F6F);
 }
 
@@ -181,6 +223,7 @@ a {
 .btn-danger:active:focus,
 .show>.btn-danger.dropdown-toggle:focus,
 .btn:focus {
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -191,21 +234,30 @@ a {
     background-color: #1B172D;
     margin-bottom: 5px;
     position: relative;
+    -webkit-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
 }
 
+.ciam-sidebar-menu-open .navbar-toggler-icons:nth-child(1),
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icons:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     margin-bottom: 0;
     top: 5px;
 }
 
+.ciam-sidebar-menu-open .navbar-toggler-icons:nth-child(2),
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icons:nth-child(2) {
     opacity: 0;
     margin-bottom: 0;
 }
 
+.ciam-sidebar-menu-open .navbar-toggler-icons:nth-child(3),
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icons:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     margin-bottom: 0;
 }
@@ -221,6 +273,8 @@ a {
 /********************* Header Start *********************/
 
 .navbar-collapse {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -237,6 +291,7 @@ a {
 
 .navbar {
     padding: 25px 20px;
+    -webkit-box-shadow: 0px 5px 10px #0000001A;
     box-shadow: 0px 5px 10px #0000001A;
 }
 
@@ -273,9 +328,11 @@ a {
     left: unset;
     right: 0;
     top: calc(100% + 10px);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
 }
 
@@ -284,7 +341,9 @@ a {
     height: 45px;
     border-radius: 50%;
     border: 1px solid #1B172D;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     margin-right: 20px;
 }
@@ -303,11 +362,14 @@ a {
 /********************* Search Bar Start *********************/
 
 .ciam-searchBar__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     background-color: #fff;
     border-radius: 12px;
     border: 1px solid #1B172D;
+    -webkit-box-shadow: 6px 6px 15px #00000014;
     box-shadow: 6px 6px 15px #00000014;
 }
 
@@ -352,6 +414,22 @@ a {
 
 .ciam-searchBar-content .form-control {
     padding-left: 30px;
+}
+
+.ciam-searchBar-content .form-control::-webkit-input-placeholder {
+    color: #252525;
+}
+
+.ciam-searchBar-content .form-control::-moz-placeholder {
+    color: #252525;
+}
+
+.ciam-searchBar-content .form-control:-ms-input-placeholder {
+    color: #252525;
+}
+
+.ciam-searchBar-content .form-control::-ms-input-placeholder {
+    color: #252525;
 }
 
 .ciam-searchBar-content .form-control::placeholder {
@@ -410,6 +488,8 @@ a {
 /* Find Specialities Doctor Section Start */
 
 .ciam-find-specialities-doctors {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), to(#D5FF98));
+    background-image: -o-linear-gradient(#A3D9FF, #D5FF98);
     background-image: linear-gradient(#A3D9FF, #D5FF98);
     position: relative;
 }
@@ -453,7 +533,9 @@ a {
     border-radius: 50%;
     border: 5px solid #1B172D;
     margin: 0 auto 20px;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
 }
 
@@ -468,6 +550,8 @@ a {
 /* Meet Specialities Doctor Section Start */
 
 .ciam-meet-specialities-doctors {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#D5FF98), to(#A3D9FF));
+    background-image: -o-linear-gradient(#D5FF98, #A3D9FF);
     background-image: linear-gradient(#D5FF98, #A3D9FF);
 }
 
@@ -477,8 +561,14 @@ a {
 }
 
 .ciam-slide-card {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
     background-color: #fff;
@@ -489,13 +579,17 @@ a {
     height: 150px;
     border-radius: 10px 10px 0 0;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
 }
 
 .ciam-slide-card-body {
     padding: 20px 15px;
     background-color: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     border-radius: 10px;
 }
@@ -536,6 +630,8 @@ a {
 /* Medicines Section Start */
 
 .ciam-medicines-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), to(#A3D9FF));
+    background-image: -o-linear-gradient(#A3D9FF, #A3D9FF);
     background-image: linear-gradient(#A3D9FF, #A3D9FF);
 }
 
@@ -586,14 +682,19 @@ a {
 /* Medicines Section End */
 
 .ciam-popular-products-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), to(#D5FF98));
+    background-image: -o-linear-gradient(#A3D9FF, #D5FF98);
     background-image: linear-gradient(#A3D9FF, #D5FF98);
 }
 
 .ciam-product-card .ciam-slide-card-img img {
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
 .ciam-health-checkups {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#D5FF98), to(#FFD26C));
+    background-image: -o-linear-gradient(#D5FF98, #FFD26C);
     background-image: linear-gradient(#D5FF98, #FFD26C);
 }
 
@@ -603,6 +704,8 @@ a {
 }
 
 .ciam-trusted-geniune-laboratory {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFD26C), to(#FF9FF0));
+    background-image: -o-linear-gradient(#FFD26C, #FF9FF0);
     background-image: linear-gradient(#FFD26C, #FF9FF0);
 }
 
@@ -613,6 +716,8 @@ a {
 /* Home Care Services Section Start */
 
 .ciam-home-care-services {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF9FF0), to(#FFD26C));
+    background-image: -o-linear-gradient(#FF9FF0, #FFD26C);
     background-image: linear-gradient(#FF9FF0, #FFD26C);
 }
 
@@ -621,8 +726,14 @@ a {
     text-align: center;
     color: #fff;
     padding: 20px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -634,7 +745,9 @@ a {
 
 .ciam-service-card-icon img {
     height: 100%;
+    -o-object-fit: contain;
     object-fit: contain;
+    -o-object-position: center;
     object-position: center;
     width: auto;
 }
@@ -657,6 +770,8 @@ a {
 }
 
 .ciam-home-care-subcategory {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFD26C), to(#FFD26C));
+    background-image: -o-linear-gradient(#FFD26C, #FFD26C);
     background-image: linear-gradient(#FFD26C, #FFD26C);
 }
 
@@ -667,6 +782,8 @@ a {
 /* Our Mission Section End */
 
 .ciam-our-mission {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFD26C), to(#FF9FF0));
+    background-image: -o-linear-gradient(#FFD26C, #FF9FF0);
     background-image: linear-gradient(#FFD26C, #FF9FF0);
 }
 
@@ -682,8 +799,14 @@ a {
     padding: 0;
     margin-bottom: 20px;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -715,6 +838,8 @@ a {
     bottom: 100%;
     right: unset;
     left: 0;
+    -webkit-transform: rotate( 180deg);
+    -ms-transform: rotate( 180deg);
     transform: rotate( 180deg);
 }
 
@@ -722,7 +847,9 @@ a {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     border: 4px solid #1B172D;
     margin: 0 auto 20px;
@@ -735,10 +862,14 @@ a {
 /* Download Application Section Start */
 
 .ciam-download-application {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF9FF0), to(#A3D9FF));
+    background-image: -o-linear-gradient(#FF9FF0, #A3D9FF);
     background-image: linear-gradient(#FF9FF0, #A3D9FF);
 }
 
 .ciam-download-application .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -747,7 +878,11 @@ a {
 }
 
 .ciam-download-app-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -772,6 +907,8 @@ a {
 /********************* Profile Page Start *********************/
 
 .ciam-dashboard-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), color-stop(#D5FF98), color-stop(#FFD26C), to(#FF9FF0));
+    background-image: -o-linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
     background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
 }
 
@@ -785,8 +922,14 @@ a {
 }
 
 .ciam-sidebar-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: #fff;
     padding: 25px 30px;
@@ -808,7 +951,9 @@ a {
     height: 45px;
     border-radius: 50%;
     border: 1px solid #ffff;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
 }
 
@@ -823,7 +968,11 @@ a {
     display: block;
     color: #fff;
     text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 18px;
     font-weight: 600;
@@ -848,6 +997,7 @@ a {
 .ciam-dashboard-content {
     padding: 30px;
     background-color: #ffffff;
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 16%);
     box-shadow: 0 0 10px rgb(0 0 0 / 16%);
     border-radius: 0 10px 10px 0;
     height: 100%;
@@ -927,6 +1077,8 @@ a {
 
 .ciam-appointment-card-body {
     padding: 20px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
 }
 
@@ -935,9 +1087,15 @@ a {
 }
 
 .ciam-appointment-card {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
 }
@@ -945,7 +1103,9 @@ a {
 .ciam-appointment-card-img img {
     height: 150px;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     border-radius: 10px 10px 0 0;
 }
@@ -957,8 +1117,13 @@ a {
 }
 
 .ciam-card-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 
@@ -1003,19 +1168,28 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-order-card-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 
 .ciam-order-card {
     padding: 20px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
 }
 
 .ciam-order-card-body .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1026,14 +1200,24 @@ a.ciam-card-details-text:hover {
 /********************* My Review Page Start *********************/
 
 .ciam-review-card-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .ciam-review-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1041,7 +1225,11 @@ a.ciam-card-details-text:hover {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1053,9 +1241,12 @@ a.ciam-card-details-text:hover {
     width: 55px;
     height: 55px;
     border-radius: 50%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     border: 1px solid #1B172D;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 
@@ -1073,6 +1264,7 @@ a.ciam-card-details-text:hover {
 
 .ciam-review-card {
     padding: 20px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
     background-color: #fff;
@@ -1104,7 +1296,11 @@ a.ciam-card-details-text:hover {
 .ciam-doctor-details-list {
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -1155,6 +1351,8 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-serch-profile-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), color-stop(#D5FF98), color-stop(#FFD26C), to(#FF9FF0));
+    background-image: -o-linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
     background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
 }
 
@@ -1171,6 +1369,7 @@ a.ciam-card-details-text:hover {
     background-color: #ffff;
     padding: 30px 20px;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 
@@ -1181,6 +1380,7 @@ a.ciam-card-details-text:hover {
     font-weight: 600;
     background-color: transparent;
     border: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
     margin-bottom: 15px;
 }
@@ -1204,6 +1404,8 @@ a.ciam-card-details-text:hover {
 
 .ciam-filter-bar .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3Csvg id='expand_more_black_24dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_2057' data-name='Path 2057' d='M24,24H0V0H24Z' fill='none' opacity='0.87'/%3E%3Cpath id='Path_2058' data-name='Path 2058' d='M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z' fill='%231d1a2f'/%3E%3C/svg%3E%0A");
+    -webkit-transform: rotate( -180deg);
+    -ms-transform: rotate( -180deg);
     transform: rotate( -180deg);
 }
 
@@ -1257,6 +1459,8 @@ a.ciam-card-details-text:hover {
 /********************* Cart Page Start *********************/
 
 .ciam-cart-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), color-stop(#D5FF98), color-stop(#FFD26C), to(#FF9FF0));
+    background-image: -o-linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
     background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
 }
 
@@ -1264,6 +1468,7 @@ a.ciam-card-details-text:hover {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     height: 100%;
 }
@@ -1275,7 +1480,9 @@ a.ciam-card-details-text:hover {
 .ciam-cart-product-img img {
     width: 65px;
     height: 65px;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     border: 1px solid #1B172D;
 }
@@ -1289,6 +1496,7 @@ a.ciam-card-details-text:hover {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     height: 100%;
 }
@@ -1309,6 +1517,8 @@ a.ciam-card-details-text:hover {
 /********************* Ask Question Page Start *********************/
 
 .ciam-ask-question-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), color-stop(#D5FF98), color-stop(#FFD26C), to(#FF9FF0));
+    background-image: -o-linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
     background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
 }
 
@@ -1316,6 +1526,7 @@ a.ciam-card-details-text:hover {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 16%);
     box-shadow: 0 0 10px rgb(0 0 0 / 16%);
 }
 
@@ -1329,6 +1540,7 @@ a.ciam-card-details-text:hover {
     padding: 20px 25px;
     border-radius: 10px;
     background-color: #ffff;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     margin-bottom: 30px;
 }
@@ -1340,7 +1552,11 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-question-answer-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -1349,10 +1565,13 @@ a.ciam-card-details-text:hover {
     margin-right: 20px;
     width: 45px;
     height: 45px;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     border: 1px solid #fff;
     border-radius: 50%;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -1363,6 +1582,7 @@ a.ciam-card-details-text:hover {
 
 .ciam-question-answer-card {
     padding: 25px;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
 }
@@ -1379,8 +1599,14 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-question-answer-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1431,10 +1657,14 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-our-services {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), to(#D5FF98));
+    background-image: -o-linear-gradient(#A3D9FF, #D5FF98);
     background-image: linear-gradient(#A3D9FF, #D5FF98);
 }
 
 .ciam-patient-testimonial {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#D5FF98), to(#FFD26C));
+    background-image: -o-linear-gradient(#D5FF98, #FFD26C);
     background-image: linear-gradient(#D5FF98, #FFD26C);
 }
 
@@ -1444,10 +1674,14 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-service {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFD26C), to(#FF9FF0));
+    background-image: -o-linear-gradient(#FFD26C, #FF9FF0);
     background-image: linear-gradient(#FFD26C, #FF9FF0);
 }
 
 .ciam-service__inner .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1468,9 +1702,11 @@ a.ciam-card-details-text:hover {
 
 .ciam-search-form-content,
 .modal-content {
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
     padding: 30px;
     border-radius: 10px;
@@ -1493,6 +1729,7 @@ a.ciam-card-details-text:hover {
 .ciam-search-form-content .form-control,
 .ciam-BookNowModal .form-select,
 .ciam-BookNowModal .form-control {
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.1);
     border: none;
@@ -1507,6 +1744,8 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-book-appoinment-content .ciam-review-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
 }
@@ -1521,6 +1760,12 @@ a.ciam-card-details-text:hover {
 
 .ciam-book-appoinment-content .ciam-review-card-img img {
     border-radius: 10px 0 0 10px;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 .ciam-starting-price {
@@ -1550,11 +1795,16 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-login-form-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .ciam-login-form-header .ciam-search-form-title {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     text-align: center;
     text-decoration: none;
@@ -1567,8 +1817,14 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-login-form-bottom-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1590,6 +1846,7 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-login-form-bottom-content .form-check-input {
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.1);
     border: navajowhite;
@@ -1606,11 +1863,17 @@ a.ciam-card-details-text:hover {
 /********************* Doctor Booking Request Page Start *********************/
 
 .ciam-booking-request-card .ciam-appointment-card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .ciam-booking-request-card .ciam-appointment-card-footer .btn {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     margin-right: 5px;
 }
@@ -1626,6 +1889,8 @@ a.ciam-card-details-text:hover {
 /********************* Doctor Profile Details Page Start *********************/
 
 .ciam-profile-details-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), color-stop(#D5FF98), color-stop(#FFD26C), to(#FF9FF0));
+    background-image: -o-linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
     background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
 }
 
@@ -1633,6 +1898,7 @@ a.ciam-card-details-text:hover {
     padding: 50px 30px;
     background-color: #fff;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 
@@ -1652,9 +1918,12 @@ a.ciam-card-details-text:hover {
     width: 155px;
     height: 155px;
     border-radius: 50%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     margin-bottom: 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 
@@ -1699,8 +1968,13 @@ a.ciam-card-details-text:hover {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -1712,8 +1986,11 @@ a.ciam-card-details-text:hover {
     border-radius: 10px;
     width: 100px;
     height: 100px;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 
@@ -1776,8 +2053,13 @@ a.ciam-card-details-text:hover {
     padding: 0;
     margin-bottom: 25px;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -1833,10 +2115,29 @@ a.ciam-card-details-text:hover {
     width: 90px;
     height: 90px;
     border-radius: 50%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     display: block;
     margin: auto;
+}
+
+.ciam-avaolable-slot-date-list .slick-arrow {
+    width: 25px;
+    height: 15px;
+    left: -5px;
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.ciam-avaolable-slot-date-list .slick-next.slick-arrow {
+    left: unset;
+    right: -5px;
+    -webkit-transform: translateY(-50px) rotate( 180deg);
+    -ms-transform: translateY(-50px) rotate( 180deg);
+    transform: translateY(-50px) rotate( 180deg);
 }
 
 
@@ -1846,6 +2147,8 @@ a.ciam-card-details-text:hover {
 /********************* Chat Page Start *********************/
 
 .ciam-chat-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A3D9FF), color-stop(#D5FF98), color-stop(#FFD26C), to(#FF9FF0));
+    background-image: -o-linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
     background-image: linear-gradient(#A3D9FF, #D5FF98, #FFD26C, #FF9FF0);
 }
 
@@ -1853,6 +2156,7 @@ a.ciam-card-details-text:hover {
     padding: 30px;
     background-color: #ffffff;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 
@@ -1861,20 +2165,32 @@ a.ciam-card-details-text:hover {
     background-color: #1B172D;
     border-radius: 10px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .ciam-chat-user-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .ciam-chat-user-detail img {
     width: 45px;
     height: 45px;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     border: 1px solid #fff;
     border-radius: 50%;
@@ -1896,11 +2212,16 @@ a.ciam-card-details-text:hover {
 
 .ciam-chat-text {
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .ciam-chat-text.ciam-chat-current-user-text {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -1913,6 +2234,7 @@ a.ciam-card-details-text:hover {
     padding: 15px 20px;
     background-color: #8FF1EB;
     border-radius: 0 10px 10px 10px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     margin-bottom: 10px;
 }
@@ -1921,7 +2243,11 @@ a.ciam-card-details-text:hover {
     font-size: 12px;
     font-weight: 600;
     opacity: 0.4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1932,6 +2258,8 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-chat-current-user-text .ciam-chat-time {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -1948,6 +2276,7 @@ a.ciam-card-details-text:hover {
 .ciam-medicine-order-card {
     border: 1px solid #1B172D;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     margin-bottom: 20px;
 }
@@ -1961,16 +2290,28 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-medicine-patient-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .ciam-medicine-order-img {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -1978,7 +2319,9 @@ a.ciam-card-details-text:hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     margin-right: 20px;
 }
@@ -1997,7 +2340,11 @@ a.ciam-card-details-text:hover {
 }
 
 .ciam-delivery-agent-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -2008,9 +2355,12 @@ a.ciam-card-details-text:hover {
 .ciam-delivery-agent-img img {
     width: 40px;
     height: 40px;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     border-radius: 50%;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -2080,7 +2430,11 @@ a.ciam-card-details-text:hover {
     padding: 0;
     margin-bottom: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -2144,14 +2498,19 @@ a.ciam-card-details-text:hover {
         right: -20px;
     }
     .navbar-toggler {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
         order: 3;
         position: relative;
         z-index: 101;
     }
     .navbar-toggler:focus {
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
     .dropdown.ciam-user-login-btn {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
         margin-left: auto;
         margin-right: 10px;
@@ -2171,11 +2530,18 @@ a.ciam-card-details-text:hover {
     .navbar-nav {
         min-height: 100vh;
         background-color: #fff;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
     .ciam-our-mission>.ciam-section-heading {
         margin-bottom: 140px;
+    }
+    .cial-sidebar-menu-link {
+        padding: 15px 30px;
     }
 }
 
@@ -2230,6 +2596,116 @@ a.ciam-card-details-text:hover {
         margin: 0 auto 60px;
         font-size: 45px;
     }
+    .ciam-profile-uploded-img-item {
+        margin-bottom: 10px;
+    }
+    .ciam-avaolable-slot-item {
+        margin-bottom: 10px;
+    }
+    .ciam-avaolable-slot-date-list .slick-arrow {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    .ciam-avaolable-slot-date-list .slick-next.slick-arrow {
+        -webkit-transform: translateY(-10px) rotate( 180deg);
+        -ms-transform: translateY(-10px) rotate( 180deg);
+        transform: translateY(-10px) rotate( 180deg);
+    }
+    .ciam-sidebar-user {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .ciam-dashboard-sidebar {
+        border-radius: 10px;
+    }
+    .cial-sidebar-menu-list {
+        padding-left: 25px;
+        margin: 25px 0;
+        padding-right: 25px;
+    }
+    .cial-sidebar-menu-link {
+        border-radius: 30px;
+    }
+    .cial-sidebar-menu-list {
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
+        margin: 0;
+    }
+    .cial-sidebar-menu-list.ciam-menu-open {
+        height: 250px;
+        margin: 25px 0;
+        overflow-y: auto;
+    }
+    .ciam-dashboard-sidebar {
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .ciam-dashboard-content {
+        border-radius: 10px;
+    }
+    .cial-sidebar-menu-link {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    .ciam-sidebar-user .navbar-toggler-icons {
+        background-color: #fff;
+    }
+    .ciam-dashboard-sidebar {
+        padding: 10px 0 30px;
+    }
+    .ciam-ask-question-content__inner {
+        padding: 20px;
+    }
+    .ciam-ask-question-content {
+        padding: 20px;
+    }
+    .ciam-question-answer-card {
+        padding: 15px;
+    }
+    .ciam-question-answer-title {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .ciam-card-question {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .ciam-question-answer-title label {
+        font-size: 16px;
+    }
+    .ciam-question-answer-card-header {
+        padding: 20px;
+    }
+    .ciam-book-appoinment-content .ciam-review-card-detail {
+        padding: 20px 15px;
+    }
+    .ciam-book-appoinment-content .ciam-review-card-img {
+        min-width: 200px;
+    }
+    .btn {
+        padding: 6px 25px;
+    }
+    .ciam-cart-content {
+        padding: 20px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .ciam-chat-text {
+        margin-bottom: 15px;
+    }
+    .ciam-profile-doctor-name {
+        font-size: 28px;
+    }
+    .ciam-profile-details-header {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -2237,6 +2713,7 @@ a.ciam-card-details-text:hover {
         padding: 6px 25px;
     }
     .ciam-searchBar__inner {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .ciam-searchBar-content {
@@ -2267,7 +2744,9 @@ a.ciam-card-details-text:hover {
     }
     .ciam-landing-slide img {
         min-height: 400px;
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: center;
         object-position: center;
     }
     .ciam-section-title {
@@ -2300,6 +2779,9 @@ a.ciam-card-details-text:hover {
     }
     .ciam-service__inner:nth-child(2) .row,
     .ciam-service__inner:nth-child(4) .row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
     .ciam-service-img img {
@@ -2322,7 +2804,12 @@ a.ciam-card-details-text:hover {
         padding: 5px;
     }
     .ciam-review-card-heading {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         margin-bottom: 25px;
     }
@@ -2330,7 +2817,12 @@ a.ciam-card-details-text:hover {
         margin-bottom: 20px;
     }
     .ciam-doctor-details-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
     .ciam-doctor-details-item:not(:last-child) {
@@ -2349,6 +2841,139 @@ a.ciam-card-details-text:hover {
         margin-bottom: 30px;
         margin-left: 0;
         text-align: center;
+    }
+    .ciam-profile-details-content {
+        padding: 30px 20px;
+    }
+    .ciam-profile-details-head {
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+    }
+    .ciam-profile-details-body__inner {
+        margin-bottom: 30px;
+    }
+    .ciam-profile-doctor-name {
+        font-size: 26px;
+    }
+    .ciam-profile-details-header {
+        margin-bottom: 30px;
+    }
+    .ciam-profile-details-title {
+        font-size: 20px;
+    }
+    .ciam-profile-details-label {
+        font-size: 16px;
+    }
+    .ciam-profile-details-description {
+        font-size: 16px;
+    }
+    .ciam-profile-details-header img {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+    }
+    .ciam-profile-uploded-img-item img {
+        width: 80px;
+        height: 80px;
+    }
+    .ciam-ask-question-content__inner {
+        padding: 15px;
+    }
+    .ciam-ask-question .input-group {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .ciam-ask-question .form-control {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .ciam-ask-question {
+        padding: 15px 10px;
+    }
+    .ciam-question-answer-user label {
+        font-size: 16px;
+    }
+    .ciam-question-answer-user img {
+        margin-right: 15px;
+    }
+    .ciam-question-answer-card-header {
+        padding: 15px 10px;
+    }
+    .ciam-question-answer-card-body .input-group {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .ciam-question-answer-card-body .form-control {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .ciam-book-appoinment-content .ciam-review-card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .ciam-book-appoinment-content .ciam-review-card-img img {
+        border-radius: 10px 10px 0 0;
+    }
+    .ciam-book-appoinment-content .ciam-review-card-img {
+        min-width: unset;
+    }
+    .ciam-search-form-title {
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .ciam-dashboard-content {
+        padding: 20px;
+    }
+    .ciam-appointment-content .col {
+        margin-bottom: 20px;
+    }
+    .ciam-review-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .ciam-chat-text__inner {
+        max-width: 90%;
+    }
+    .ciam-chat-description {
+        padding: 10px;
+    }
+    .ciam-chat-footer .input-group {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .ciam-chat-footer .form-control {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .ciam-chat-content {
+        padding: 15px;
+    }
+    .ciam-chat-content__inner {
+        padding: 15px;
+    }
+    .ciam-chat-user-detail label {
+        font-size: 16px;
+    }
+    .ciam-chat-header {
+        padding: 15px 20px;
+    }
+    .ciam-chat-video-btn svg {
+        width: 25px;
+    }
+    .ciam-delivery-agent-img {
+        margin-right: 20px;
+        width: 50px;
+    }
+    .ciam-delivery-agent-content__inner {
+        width: calc(100% - 50px);
     }
 }
 

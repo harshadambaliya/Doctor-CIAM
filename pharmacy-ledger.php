@@ -10,6 +10,11 @@
                         <div class="ciam-sidebar-user">
                             <img src="assets/images/user-img.png" alt="user-img" class="img-fluid">
                             <span>User Name</span>
+                            <button class="navbar-toggler cial-sidebar-menu-toggler ms-auto d-block d-lg-none" type="button">
+                                <span class="navbar-toggler-icons"></span>
+                                <span class="navbar-toggler-icons"></span>
+                                <span class="navbar-toggler-icons"></span>
+                            </button>
                         </div>
 
                         <ul class="cial-sidebar-menu-list">
